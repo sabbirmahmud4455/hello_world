@@ -8,9 +8,7 @@
 			for (let j = i; j > 0; j--) {
 			
 				if (array[j] < array[j-1]) {
-					let tem = array[j];
-					array[j] = array[j-1];
-					arr[j-1] = tem;
+					[array[j], array[j-1]] = [array[j-1], array[j]]
 				} else {
 					break
 				}
